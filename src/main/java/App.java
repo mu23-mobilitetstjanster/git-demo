@@ -16,19 +16,19 @@ public class App {
     return scanner.nextLine();
   }
 
-    static int queryNumber(String message) {
-      int number = -1;
+  static int queryNumber(String message) {
+    int number = -1;
 
-      while(number == -1) {
-        String input = query(message);
+    while(number == -1) {
+      String input = query(message);
 
-        try {
-          number = Integer.parseInt(input);
-        } catch(NumberFormatException ex) {
-          System.out.println(input + "is not a number, try again");
-        }
+      try {
+        number = Integer.parseInt(input);
+      } catch(NumberFormatException ex) {
+        System.out.println(input + "is not a number, try again");
       }
-  
-      return number;
+    }
+
+    return number;
   }
 }
