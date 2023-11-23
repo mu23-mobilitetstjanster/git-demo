@@ -15,4 +15,10 @@ public class App {
     System.out.print(message + " ");
     return scanner.nextLine();
   }
+
+  static int queryNumber(String message) {
+    String input = query(message);
+
+    return Integer.parseInt(input);
+  }
 }
